@@ -17,8 +17,8 @@ public class FizzBuzz {
 		if (isDivisibleBy(number, 5) && !isDivisibleBy(number, 3)) {
 			return "Buzz";
 		}
-		if (isDivisibleBy(number, 3) && !isDivisibleBy(number, 3)) {
-			return "Fuzz";
+		if (isDivisibleBy(number, 3) && !isDivisibleBy(number, 5)) {
+			return "Fizz";
 		}
 		if (isDivisibleBy(number, 3) && isDivisibleBy(number, 5)) {
 			return "FizzBuzz";
@@ -26,6 +26,7 @@ public class FizzBuzz {
 		else {
 			return Integer.toString(number);
 		}
+	
 	}
 	
 	private boolean isDivisibleBy(int dividend, int divisor) {
